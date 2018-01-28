@@ -22,6 +22,8 @@ $(document).ready(function() {
   var stateArray = [];
   var locationCount = 0;
 
+  // googlemaps apiikey: AIzaSyC9ze5ybVejEVU8WbQcqg4Ht12b4mIjsSA
+
   var input = document.getElementById("location");
   var autoLocation = new google.maps.places.Autocomplete(input);
 
@@ -31,6 +33,7 @@ $(document).ready(function() {
 //  On Click event associated with the add-to-do function
   $("#add-location").on("click", function(event) {
     event.preventDefault();
+    console.log("clicked Add");
 
 
 // Get the to-do "value" from the textbox and store it a variable
