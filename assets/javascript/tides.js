@@ -45,7 +45,7 @@ $(document).ready(function() {
 
 //check to see if the city is outside the USA, if so, get the tide data for the location
     if (locationArray[2].trim() == "United States") {
-      var queryURL = "http://api.wunderground.com/api/11055da2d2b90f72/tide/q/" + locationArray[1] + "/" + locationArray[0] + ".json";
+      var queryURL = "https://api.wunderground.com/api/11055da2d2b90f72/tide/q/" + locationArray[1] + "/" + locationArray[0] + ".json";
       var hitideFound = 0;
       var lotideFound = 0;
       var hiloTimesPretty = [];
