@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <html lang="en-us">
 
   <head>
@@ -8,7 +9,7 @@
     <title>Tides</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <linlk rel="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
       #todo-item {
@@ -21,15 +22,14 @@
 
   <body>
 
-
-  <div class="jumbotron jumbotron-fluid text-light" style="background-color: gray"> <!-- //GAME NAME -->
+  <div class="jumbotron jumbotron-fluid text-light bg-primary"> <!-- //GAME NAME -->
     <div class="container">
           <h1 class="display-3 text-center"> Tide Information</h1>
           <h4 class="display-5 text-center"> Here's the next tide for each city</h4>
           <p></p>
-          <h4 class="display-5 text-center" id="time"> </h4>
+          <h4 class="display-5 text-center" id="time">Current Time:  </h4>
           <p></p>
-          <div style="text-align: center"<
+          <div style="text-align: center">
           <form>
             <span id="location-input">
               Location:  
@@ -45,7 +45,7 @@
   <div class="card card-fluid" ">
       <div class="card-header bg-primary text-white">
         Locations
-        <button type='button' class='btn btn-success update'>Update</button>
+        <!-- <button type='button' class='btn btn-success' id='update'>Update</button> -->
       </div>
       
     <table class="table">
@@ -59,7 +59,6 @@
             <th scope="col">Time</th>
             <th scope="col">Time Until</th>
           
-
           </tr>
       </thead>
      
@@ -82,8 +81,9 @@
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 
     <!-- Script -->
-    <script src="assets/javascript/tides.js"></script>
     <script src="assets/javascript/moment.js"></script>
+    <script src="assets/javascript/tides.js"></script>
+ 
 
 
   </body>
