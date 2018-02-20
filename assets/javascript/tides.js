@@ -33,6 +33,7 @@ $("#add-location").on("click", function(event) {
 
 //convert "city, state, country" into an array
     locationArray = rawLocation.split(",");
+    console.log("location: " + locationArray);
 
     $("#location").val("");
 
