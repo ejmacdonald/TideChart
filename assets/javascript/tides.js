@@ -43,7 +43,7 @@ $("#add-location").on("click", function(event) {
 
 // check to see if the city is outside the USA, if so, get the tide data for the location
 
-    if (locationArray[2].trim() == "United States") {
+    if (locationArray[2].trim() == "USA") {
         console.log ("we're in the US, location is" + locationArray[0]);
         var queryURL = "https://api.wunderground.com/api/11055da2d2b90f72/tide/q/" + locationArray[1] + "/" + locationArray[0] + ".json";
         console.log("original url: " + queryURL);
