@@ -1,5 +1,7 @@
 # TideChart
 
+See it here:  https://ejmacdonald.github.io/TideChart/tides.html
+
 This app gets the tide information for any city added (for which the tide information is available).  Once the city is secected, the table counts down the amount of time until the next tide.  The user can delete any city before the tide exipres.  Once the tide expires, the page continues to display "time since last tide".  The user can "refresh" the information for the city, which will display the next tide information.
 
 Some key technologies deployed here:
